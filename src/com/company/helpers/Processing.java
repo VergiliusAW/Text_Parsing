@@ -13,7 +13,9 @@ public class Processing {
     private HashMap<String,Integer> words = new HashMap<>();
 
     public List sort() {
-        return new ArrayList(words.keySet());
+        List l = new ArrayList(words.keySet());
+        l.addAll(new ArrayList(words.values()));
+        return l;
     }
 
     public void form(String key) {

@@ -19,7 +19,7 @@ public class Main {
                 processing.form((String) i);
             }
             for (Object i:processing.sort()) {
-                output.write((String) i + "\n");
+                output.write(i + "\n");
                 output.flush();
             }
         } catch (IOException e) {
