@@ -12,8 +12,8 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         Instant starts = Instant.now();
-        String inputFileName = "textL.txt";
-        String outputFileName = "output.txt";
+        String inputFileName = "files/text.txt";
+        String outputFileName = "files/output.txt";
         BufferedReader input = new BufferedReader(new InputStreamReader(new FileInputStream(inputFileName)));
         BufferedWriter output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputFileName)));
         Processing processing = new Processing();
